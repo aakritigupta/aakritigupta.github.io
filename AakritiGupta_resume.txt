@@ -1,0 +1,97 @@
+Aakriti Gupta
+
+E-mail: aakriti.a.gupta@gmail.com
+Website: aakritigupta.com
+
+Internships
+________________
+6WunderKinder [6]  | January 2013 - Present
+Intern at the Backend Team of 6Wunderkinder
+
+- Created a service oriented application with Rails connected to the main API
+       - Pulling out logic to distribute load and logic from a monolithic API to a  multi service architecture
+   - Handling payments for newly introduced pro accounts
+   - Refactoring existing code in the main API projects
+
+SlideShare [7] | May 2012 - July 2012
+Interned with the core backend team. Investigated open source tools for document format conversion. Coded and tested modules in Ruby of the current backend infrastructure for automation.
+
+Google Summer of Code [8] | May 2011 - August 2011
+Contributed to Calligra [9](Open source office suite built on Qt and KDE [10] libs). Implemented a new presentation mode for making animated SVG presentations using Javascript. Coded in C++.
+
+MILLEE [11] | May 2010 - February 2011
+Built educational games for rural children on a mobile platform (J2ME) for Nokia 3110c. Assisted Dr. Matthew Kam, from CMU, in the research.
+
+
+Skills
+________________
+Programming languages and database systems
+    - Ruby, C, C++
+    - MongoDB, MySQL, Postgres
+
+Frameworks and web technologies I have used
+    - Ruby on Rails, Qt framework
+    - SVG spec
+
+Tools
+    - Version control systems: git, svn
+    - Build tools: CMake, GNU Make
+    - Debugging tool - gdb
+    
+    
+Education
+________________
+B.Tech. at DA-IICT [12], Computer Science majors | Autumn 2009 - Present
+
+
+Programming projects
+
+(The source code for the projects can be found on https://github.com/aakritigupta)
+________________
+Votekit
+A generic RESTful API for creating voting applications, built primarily to soothe the itch of trying Node.js and MongoDB!
+
+Urban Sound Archive
+A service for finding and contributing sound content specific to location. This Rails app is a mashup of the Google Maps API and SoundCloud API.
+SoundCloud API doesn't yet provide search by location, hence this is a great tool for travellers looking to contribute, collect or explore sounds related to a place or occasion.
+I built this in a team of two at the Berlin Geekettes hackday.
+
+Markofy
+A web service for marking and highlighting content in articles. Made using Node.js and MongoDB for database.
+I built this in a team of two at the DevelopHer hackday.
+
+In-paint
+Implemented an in-painting algorithm in MATLAB for a course in Image Processing.
+
+Minotaur
+A simple command line based game similar to Pac-man written in C with the aim to explore multithreading and mutexes.
+
+
+Activities and interests
+________________________
+I love attending hackathons for the rush of creating something working and useful within 24 hours and with an absolutely new team! I have participated in DevelopHer Hackday organized by LinkedIn and the Berlin Geekettes hackathon.
+
+I am FOSS enthusiast and contribute to KDE when I get time. I attended the Desktop Summit in Berlin, jointly organized by GNOME and KDE and presented my GSoC project.
+
+In college, I served as Joint Secretary and program co-ordinator for WIE group for the IEEE student branch.
+
+When not coding I spend my time reading: On the web, I like Oatmeal comics, Thought Catalogue and Hacker News.
+
+I read a wide variety of books - Ayn Rand, Bernard, Simon Singh are my favourites and I love Shakespeare's plays.
+
+
+Links
+________________
+[1] Website: https://aakritigupta.com
+[2] Twitter: https://twitter.com/aakritiagupta
+[3] LinkedIn: https://http://www.linkedin.com/in/aakritiagupta
+[4] Github: https://github.com/aakritigupta
+[5] Blog: https://aakritigupta.wordpress.com
+[6] 6WunderKinder: https://6wunderkinder.com
+[7] SlideShare: https://slideshare.net
+[8] Google Summer of Code: http://www.google-melange.com
+[9] Calligra: http://http://calligra.org/
+[10] KDE: http://kde.org
+[11] MILLEE: http://www.cs.cmu.edu/~mattkam/lab/millee.html
+
+Last updated: 19th March, 2013. The most updated version can be found at aakritigupta.com/resume
