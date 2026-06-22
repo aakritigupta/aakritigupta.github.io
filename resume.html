@@ -1,151 +1,296 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aakriti Gupta — CV</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <meta http-equiv = "Content-Type" content = "text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name = "description" content = "Resume"/>
-    <meta name = "copyright" content = "Aakriti Gupta"/>
-    <link href='http://fonts.googleapis.com/css?family=Georgia:400,900' rel='stylesheet' type='text/css'>
-
-    <style>
     body {
-      padding-left: 5%;
-      background-color: #F9F9F9;
-      color :#6D6666;
-      width: 90%;
-      font-family: 'Georgia',sans-serif;
+      font-family: 'Georgia', serif;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 48px 60px;
+      max-width: 860px;
+      margin: 0 auto;
     }
+
+    /* ── Header ─────────────────────────────────────────── */
+    header { margin-bottom: 20px; }
 
     h1 {
-      text-align: center;
-      padding-top: 3%;
-      color:#5195CE;
+      font-family: 'Arial', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: #111;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
     }
 
-    #card {
-     text-align: center;
+    .subtitle {
+      font-family: 'Arial', sans-serif;
+      font-size: 14px;
+      color: #2c6fad;
+      font-weight: 600;
+      margin-bottom: 6px;
     }
 
-    .section h2 {
-      border-bottom: solid 1px #DDD;
+    .subtitle span {
+      color: #444;
+      font-weight: 400;
     }
 
-    .section h3 {
-    color: #5195CE;
-    font-weight: lighter;
-      text-align: justify;
+    .contacts {
+      font-family: 'Arial', sans-serif;
+      font-size: 12.5px;
+      color: #333;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 0;
+      align-items: center;
     }
 
-    .section h3 small {
-      color: #6D6666;
+    .contacts a {
+      color: #333;
+      text-decoration: none;
     }
 
-    .section h3 small .time {
-      color: #6D6666;
+    .contacts a:hover { text-decoration: underline; }
+
+    .sep { margin: 0 8px; color: #aaa; }
+
+    /* ── Sections ────────────────────────────────────────── */
+    section { margin-bottom: 22px; }
+
+    h2 {
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      color: #111;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 4px;
+      margin-bottom: 12px;
     }
 
-    .section h4 {
-
-    font-weight: lighter;
-      text-align: justify;
+    /* ── Summary ─────────────────────────────────────────── */
+    .summary p {
+      font-size: 13.5px;
+      margin-bottom: 8px;
+      color: #1a1a1a;
     }
-      
-    a:link {color:#5195CE;}
-    a:visited {color:#5195CE;}
-    a:hover {color: #6D6666;}
-    </style>
 
-    <title> Aakriti | Resume </title>
+    .summary p:last-child { margin-bottom: 0; }
 
-  </head>
+    .summary strong { font-weight: 700; }
 
-  <body>
+    /* ── Experience ──────────────────────────────────────── */
+    .job { margin-bottom: 20px; }
 
+    .job-title {
+      font-family: 'Arial', sans-serif;
+      font-size: 14.5px;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 2px;
+    }
+
+    .job-meta {
+      font-family: 'Arial', sans-serif;
+      font-size: 12.5px;
+      color: #555;
+      margin-bottom: 8px;
+    }
+
+    .job-meta .company {
+      color: #2c6fad;
+      font-weight: 600;
+    }
+
+    .sub-heading {
+      font-family: 'Arial', sans-serif;
+      font-size: 11.5px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: #2c6fad;
+      margin: 10px 0 4px;
+    }
+
+    .sub-note {
+      font-style: italic;
+      font-size: 12.5px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 13.5px;
+      padding-left: 16px;
+      position: relative;
+      margin-bottom: 6px;
+      color: #1a1a1a;
+    }
+
+    ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #555;
+    }
+
+    ul li strong { font-weight: 700; }
+
+    a { color: #2c6fad; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Education ───────────────────────────────────────── */
+    .edu-entry { margin-bottom: 10px; }
+
+    .edu-degree {
+      font-family: 'Arial', sans-serif;
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #111;
+    }
+
+    .edu-degree a { font-weight: 400; }
+
+    .edu-detail {
+      font-size: 13px;
+      color: #555;
+    }
+
+    /* ── Speaking ────────────────────────────────────────── */
+    .speaking li { font-size: 13.5px; }
+
+    /* ── Earlier / italic note ───────────────────────────── */
+    .earlier-note {
+      font-style: italic;
+      font-size: 13px;
+      color: #555;
+      padding-left: 0;
+      margin-top: 4px;
+    }
+
+    .earlier-note::before { content: none; }
+
+    @media print {
+      body { padding: 24px 32px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header>
     <h1>Aakriti Gupta</h1>
-    <div id = "card" class = "vcard">
-      <p>
-        <a class = "email" href = "mailto:hi@aakritigupta.me">E-mail</a> |
-        <a class = "url" href = "http://gitlab.com/aakriti.gupta">GitLab</a> |
-        <a class = "url" href = "http://github.com/aakritigupta">Github</a> |
-        <a class = "url" href = "http://in.linkedin.com/in/aakritiagupta">LinkedIn</a> |
-        <a class = "url" href = "https://twitter.com/aakri_tea">Twitter</a> | 
-        <a class = "url" href = "https://horsesandcherries.wordpress.com">Blog</a>
-      </p>
+    <p class="subtitle">Senior Engineer, GitLab <span>· Darmstadt, Germany (EU remote)</span></p>
+    <div class="contacts">
+      <a href="mailto:aakriti.a.gupta@gmail.com">aakriti.a.gupta@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="https://gitlab.com/aakriti.gupta" target="_blank">gitlab.com/aakriti.gupta</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/aakritigupta" target="_blank">github.com/aakritigupta</a>
+      <span class="sep">|</span>
+      <a href="https://linkedin.com/in/aakritiagupta" target="_blank">linkedin.com/in/aakritiagupta</a>
+    </div>
+  </header>
+
+  <!-- ── Summary ── -->
+  <section class="summary">
+    <h2>Summary</h2>
+    <p>I am a senior backend engineer with 13 years of experience building distributed systems for open-source developer tools — Travis CI and GitLab — across remote, globally distributed teams for the last decade. I lead with empathy and prioritize for strategic impact: mentoring people, simplifying processes, driving rapid AI adoption, and clearing blockers so the team does its best work.</p>
+    <p>In my current role I am an informal team lead of a 3-engineer team in GitLab's Groups &amp; Projects sub-team, mentoring two intermediate engineers and acting as DRI on several engineering projects. I took charge of the team's planning and delivery, making our commitments markedly more predictable.</p>
+    <p>My mid-term goal is tech leadership. I am looking to move into an Engineering Manager or Tech Lead role — one that combines technical work, growing people, and working with stakeholders.</p>
+    <p><strong>Technical stack:</strong> Ruby, Ruby on Rails, PostgreSQL, Redis; testing and code quality.</p>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section>
+    <h2>Experience</h2>
+
+    <!-- GitLab -->
+    <div class="job">
+      <div class="job-title">Senior Backend Engineer &amp; Informal Team Lead</div>
+      <div class="job-meta"><span class="company">GitLab</span> | June 2019 – Present (~7 years) | Remote (Germany)</div>
+
+      <div class="sub-heading">Engineering Work</div>
+      <p class="sub-note">(DRI = directly responsible individual / project owner)</p>
+      <ul>
+        <li><strong>State Management rewrite (DRI)</strong> — Epic #17954: drove the rewrite of a state-machine backend for groups and projects to deliver consistent state handling, audit/history tracking, and fewer timeout-related failures.</li>
+        <li><strong>Git repository replication v2 (founding DRI)</strong> — set the direction for a company-priority replication redesign addressing data-integrity issues in enterprise disaster recovery: planned the work and built the foundational path before handing off on a team change.</li>
+        <li><strong>Maintenance Mode (DRI)</strong> — delivered the cross-stage Maintenance Mode feature (Epic #2149, shipped in GitLab 13.9), a GitLab Premium-tier capability that lets admins safely pause writes during maintenance and Geo failovers.</li>
+        <li>Drove GitLab's Disaster Recovery (Geo) offering to maturity: added replication for new data types via the self-service framework (e.g. vulnerability exports, as DRI).</li>
+        <li>Supported large Geo / Disaster-Recovery enterprise customers through complex replication issues and 2-week support rotations.</li>
+        <li>Maintainer of the open-source GitLab Rails project.</li>
+      </ul>
+
+      <div class="sub-heading">Leadership Work</div>
+      <ul>
+        <li><strong>Planning &amp; delivery lead</strong> for the Groups &amp; Projects sub-team of the Organizations team: introduced planning syncs and a realistic delivery plan that raised the sub-team's say/do ratio (planned vs. delivered) from ~50% to a steady ~85%, giving reliable delivery dates and reducing team stress through a team transition.</li>
+        <li><strong>Career-development mentorship:</strong> mentored two intermediate engineers with fortnightly coaching 1:1s — one earned database maintainership on the GitLab project; the other was coached toward senior engineer while transitioning back from parental leave.</li>
+        <li><strong>Hiring:</strong> interviewed engineering candidates.</li>
+        <li><strong>Feedback culture:</strong> wrote 360-degree feedback for peers and managers.</li>
+        <li><strong>Open-source community leadership:</strong> reviewed and merged community-contribution MRs from the open-source community, encouraging long-term contributors; ran weekly backlog refinement.</li>
+        <li><strong>Process improvement:</strong> authored the team's issue-refinement guidelines (clear go/no-go criteria and time-boxing); broke complex requirements into well-scoped, independently shippable issues.</li>
+        <li>Authored <a href="https://about.gitlab.com/blog/2021/05/24/how-we-test-a-feature-that-affects-almost-all-parts-of-gitlab/" target="_blank">"How we tested a feature that affected (almost) all parts of GitLab"</a> — GitLab blog (2021), on coordinating cross-team work to QA the Maintenance Mode feature across GitLab.</li>
+        <li>Initiated and led GitLab's Google Summer of Code participation (2021) and mentored a student.</li>
+      </ul>
     </div>
 
-<hr>
-<p>Senior Backend Engineer with a track record of building distributed systems and working in cross-functional teams. I am looking to transition into an engineering manager role by leveraging my extensive industry experience and leadership skills.</p>
+    <!-- Travis CI -->
+    <div class="job">
+      <div class="job-title">Platform Engineer</div>
+      <div class="job-meta"><span class="company">Travis CI</span> | May 2016 – May 2019 (3 years) | Remote</div>
+      <ul>
+        <li>Built the Travis API and backend systems in Ruby.</li>
+        <li>Built a service to merge the commercial and free hosted platforms, resolving data-history conflicts and infrastructure merges.</li>
+        <li>Led the scheduled builds (crons) feature and improved fair-use detection.</li>
+      </ul>
+    </div>
 
-<hr>
+    <!-- Early career -->
+    <div class="job">
+      <div class="job-title">Backend Engineer at start-ups and consultancy</div>
+      <div class="job-meta">May 2013 – April 2016 (~3 years) | Berlin</div>
+      <ul>
+        <li>At <strong>Blacklane</strong> (being acquired by Uber): migrated legacy stacks to AWS using Chef and Terraform, dockerized services, set up monitoring, and broke a Ruby monolith into smaller services.</li>
+        <li>At <strong>TD Reply</strong> (social-media analytics): ran the Ruby backend and infrastructure provisioning with Ansible.</li>
+        <li>Across a couple of early-stage start-ups: built web APIs and contributed to frontends.</li>
+        <li class="earlier-note"><em>Earlier: internships at 6WunderKinder (Wunderlist) and SlideShare; Google Summer of Code with KDE (2012–2013).</em></li>
+      </ul>
+    </div>
+  </section>
 
-<h3>Key Skills</h3>
-<ul>
-  <li>Leadership and team management</li>
-  <li>Project planning and execution</li>
-  <li>Cross-functional collaboration</li>
-  <li>Focus on code quality</li>
-  <li>Problem-solving and troubleshooting</li>
-  <li>Effective communication and mentorship</li>
-  <li>Technical: Ruby, Ruby on Rails, Postgres, Redis</li>
-</ul>
+  <!-- ── Education ── -->
+  <section>
+    <h2>Education</h2>
+    <div class="edu-entry">
+      <div class="edu-degree"><strong>M.S. Computer Science</strong> — <a href="https://www.gatech.edu" target="_blank">Georgia Institute of Technology</a></div>
+      <div class="edu-detail">Major: Interactive Intelligence | 2016 – 2018</div>
+    </div>
+    <div class="edu-entry">
+      <div class="edu-degree"><strong>B.Tech Computer Science</strong> — DA-IICT | 2009 – 2013</div>
+    </div>
+  </section>
 
-<hr>
-
-<h3>Industry Experience (2013 - Present)</h3>
-
-<h4>Senior Backend Engineer, Geo Replication</h4>
-<p><strong>GitLab</strong> | June 2019 - Present</p>
-<ul>
-  <li>Drove <a href="https://docs.gitlab.com/ee/administration/geo/disaster_recovery/">GitLab's Disaster Recovery</a> offering to Maturity, ensuring robustness and reliability</li>
-  <li><a href="https://gitlab.com/gitlab-org/gitlab">Maintainer for GitLab's open source Rails project</a>, with domain expertise of Rails and Geo replication</li>
-  <li>Led and developed <a href="https://about.gitlab.com/blog/2021/03/17/collaborating-on-a-cross-stage-feature/">the Maintenance Mode project, fostering cross-functional collaboration</a>, including all stages at GitLab for knowledge sharing, reviews, documentation and testing</li>
-  <li>Organized co-working days for German co-workers, enhancing team cohesion and productivity.</li>
-  <li>Spearheaded <a href="https://summerofcode.withgoogle.com/archive/2021/organizations/5396515480141824">GitLab's participation in Google Summer of Code in 2021</a>, mentoring students and driving project success.</li>
-</ul>
-
-<h4>Platform Engineer</h4>
-<p><strong><a href="https://travis-ci.com">Travis CI</a></strong> | May 2016 - May 2019</p>
-<ul>
-  <li>Developed the Travis API and backend systems in Ruby and Elixir, contributing to open-source projects.</li>
-  <li>Engineered a service in Elixir to merge commercial and free hosted platforms, resolving data history conflicts and infrastructure merging.</li>
-  <li>Led the development of scheduled builds (crons) feature.</li>
-  <li>Enhanced fair use detection algorithms and</li>
-</ul>
-
-<h4>Backend and Infrastructure Engineer</h4>
-<p><strong><a href="https://www.blacklane.com/en/">Blacklane</a></strong> | December 2014 - April 2016</p>
-<ul>
-  <li>Migrated legacy stacks to AWS using Chef and Terraform, optimizing infrastructure management.</li>
-  <li>Dockerized services for development environments and implemented monitoring systems with Stackdriver.</li>
-  <li>Decomposed Ruby monolith into smaller services, improving s
-</ul>
-    
-<h4>Backend Engineer</h4>
-<p><strong>Early Stage Start-ups</strong> | May 2013 - November 2014</p>
-<ul>
-  <li>Developed web APIs and contributed to web frontend at multiple early stage start-ups), gaining experience in multifaceted roles.</li>
-  <li>Worked at TD Reply, a social media marketing analytics consultancy, managing Ruby backend and infrastructure provisioning with Ansible.</li>
-</ul>
-
-<h4>Earlier Experience (2012 - 2013)</h4>
-<p>Internships at 6WunderKinder and SlideShare, along with participation in Google Summer of Code (KDE).</p>
-
-<hr>
-
-<h3>Education</h3>
-
-<h4>Masters in Computer Science</h4>
-<p><em>Georgia Institute of Technology</em><br>
-Major: Interactive Intelligence<br>
-Spring 2016 - Summer 2018</p>
-
-<h4>Bachelors of Technology</h4>
-<p><em>DA-IICT</em><br>
-Computer Science majors<br>
-Autumn 2009 - Spring 2013</p>
-
-<hr>
+  <!-- ── Speaking ── -->
+  <section class="speaking">
+    <h2>Speaking Engagement</h2>
+    <ul>
+      <li>Speaker, <strong>The Developer Show</strong> — live edition at GitLab Transcend (London, 2026).</li>
+    </ul>
+  </section>
 
 </body>
 </html>
-
